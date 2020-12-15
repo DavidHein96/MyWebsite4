@@ -8,7 +8,7 @@
     <meta name="description" content="Describe your website">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <title>Creating a New Theme</title>
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
     
@@ -525,7 +525,7 @@ $
 :wq
 
 $
-</code></pre><p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&quot;. In our template, the commands are:</p>
+</code></pre><p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&rdquo;. In our template, the commands are:</p>
 <ol>
 <li>range</li>
 <li>.Title</li>
@@ -713,7 +713,7 @@ i'm speechless
 -rw-rw-r--  1 mdhender  staff   358 Sep 27 15:08 public/post/first-post/index.html
 -rw-rw-r--  1 mdhender  staff     0 Sep 27 15:08 public/post/index.html
 -rw-rw-r--  1 mdhender  staff   342 Sep 27 15:08 public/post/second-post/index.html
-</code></pre><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/'. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
+</code></pre><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/&rsquo;. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
 <p>One other thing. Take a look at the home page.</p>
 <pre><code>$ cat public/index.html
 &lt;!DOCTYPE html&gt;
